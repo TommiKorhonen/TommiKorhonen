@@ -1,0 +1,30 @@
+@use "./variables";
+@use "./animations";
+
+@use "./hamburgermenu";
+@use "./nav";
+@use "./header";
+@use "./mainsection";
+
+@media only screen and (min-width: 600px) {
+
+    #navbar{
+        ul{
+           display: flex;
+           
+        }
+        .hamburgerContainer{
+            display: none;
+        }
+    }
+    .header{
+        .headerTextContainer{
+            h1 {
+                font-size: 4rem;
+            }
+            #devH3{
+                font-size: 2rem;
+            }
+        }
+    }
+}

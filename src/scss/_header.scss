@@ -1,0 +1,102 @@
+@use "./variables";
+@use "./animations";
+@use "./mixins";
+/* ===================================== 
+    -----header------
+======================================== */
+.header {
+    @include mixins.flexCentering(column, "");
+    min-height: 100vh;
+    background-image: url("../img/forest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+/* ===================================== 
+    -----mobile menu green effect overlay------
+======================================== */
+    .overlay {
+        background-image: linear-gradient(rgb(163, 228, 133), transparent);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1;  
+    }
+/* ===================================== 
+    -----/mobile menu green effect overlay------
+======================================== */
+    .headerTextContainer{
+        @include mixins.flexCentering(column, center);
+        justify-content: center;
+        margin: auto;
+        padding: 0 1rem;
+
+        .helloH3{
+            position: relative;
+            padding-left: 80px;
+            color: rgb(199, 90, 199);
+            align-self: flex-start;
+            
+            &:before {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 2px;
+                background-color: purple;
+                margin-top: -1.5px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: variables.$headerWhite;
+        }
+        #devH3 {
+            margin: 0;
+            color: variables.$headerWhite;
+            font-weight: 100;
+            align-self: flex-start
+        }
+/* ===================================== 
+    -----socials------
+======================================== */
+        .socialsContainer {
+            padding: 0.5rem;
+            
+            .socials {
+                @include mixins.socialStyles();
+                
+            }
+        }  /* /socials*/
+        .headerButtons {
+            @include mixins.flexCentering(row, center);
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1rem;
+            a {
+                @include mixins.flexCentering("", center);
+                justify-content: center;
+                height: 1rem;
+                width: 100%;
+                max-width: 500px;
+                padding: 1.2rem;
+                color: variables.$headerWhite;
+                text-transform: uppercase;
+                border: 3px solid white;
+
+                &:hover {
+                    background-color: variables.$hoverColor;
+                }
+            }
+        }
+    }
+   
+}
+/* ===================================== 
+    -----/header------
+======================================== */
