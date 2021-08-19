@@ -1,16 +1,17 @@
 @use "./mixins";
 @use "./header";
 footer {
-    background-color: black;
-    @include mixins.flexCentering(column, center);
-    h3 {
-        color: white;
+  background-color: black;
+  @include mixins.flexCentering(column, center);
+  padding-bottom: 4rem;
+  h3 {
+    color: white;
+  }
+  .socialsContainer {
+    margin-top: 1rem;
+    @include mixins.flexCentering(row, "");
+    .socials {
+      @include mixins.socialStyles();
     }
-    .socialsContainer{
-        margin-top: 1rem;
-        @include mixins.flexCentering(row, "");
-        .socials {
-            @include mixins.socialStyles();
-        }
-    }
+  }
 }
