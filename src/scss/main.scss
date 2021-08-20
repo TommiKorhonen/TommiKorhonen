@@ -9,58 +9,61 @@
 @use "./footer";
 @use "./mediaqueries";
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=PT+Sans&display=swap");
 /* ===================================== 
     -----Global main styles------
 ======================================== */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    line-height: 1.5;
-    font-family: 'PT Sans', sans-serif;
+body {
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
 
-    &.noscroll{
-        overflow: hidden;
-    }
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 .wrapper {
-    // padding: 0 1rem;
-    width: 100%;
-    // max-width: 60rem;
-    // margin: 0 auto;
+  // padding: 0 1rem;
+  width: 100%;
+  // max-width: 60rem;
+  // margin: 0 auto;
 }
-h2, h3, p {
-    max-width: 65ch;
-    margin: 1em 0 0 0;
+h2,
+h3,
+p {
+  max-width: 65ch;
+  margin: 1em 0 0 0;
 }
-h1, h2, h3 {
-    font-weight: 900;
-    line-height: 1.1;
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.1;
 }
 h1 {
-    font-size: 3rem;
-    
+  font-size: 3rem;
 }
 h2 {
-    font-size: 2rem;
-} 
+  font-size: 2rem;
+}
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 p {
-    font-size: 1.15rem;
-    color: #5f5f5f;
+  font-size: 1.15rem;
+  color: #5f5f5f;
 }
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 /* ===================================== 
     -----/Global main styles------
